@@ -1,0 +1,15 @@
+Layer map {
+ Index 9
+}
+Layer managers {
+ Index 1
+}
+Layer gamemode {
+ Index 2
+}
+Layer environment {
+ Index 3
+}
+Layer dev {
+ Index 0
+}

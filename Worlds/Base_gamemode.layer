@@ -1,0 +1,46 @@
+SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+}
+DevGameMode DevGameMode {
+ components {
+  SCR_AutomaticRespawnHandlerComponent "{5974843BF72D4DFE}" {
+   m_iForcedFaction 0
+   m_iForcedLoadout 0
+  }
+  SCR_RespawnSystemComponent "{5974843BF831B051}" {
+  }
+  RplComponent "{5974843BFE103F91}" {
+   "Rpl State Override" Static
+   Streamable Disabled
+  }
+ }
+ coords 180.019 10.001 178.163
+}
+PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+}
+SCR_FactionManager FactionManager : "{589540B35EBA8CDC}Prefabs/MP/Managers/Factions/FactionManager_USxUSSR.et" {
+ coords 502.102 0 185.607
+ Factions {
+  SCR_Faction "{56B2B46E9AF80999}" {
+   m_bIsPlayable 0
+  }
+ }
+ m_bCanChangeFactionsPlayable 0
+}
+SCR_LoadoutManager LoadoutManager {
+ coords 509.032 0 177.737
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{59713AE13B4FE044}" {
+   m_sLoadoutResource "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
+   m_sLoadoutImage "{2B0877799B9B6C66}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_Rifleman.edds"
+   m_sAffiliatedFaction "US"
+  }
+ }
+}
+SCR_SpawnPoint SpawnPoint_US : "{CEA2B24051A44525}PrefabsEditable/SpawnPoints/E_SpawnPoint_US.et" {
+ coords 263.601 9.999 269.793
+ angleY -78.208
+ m_fSpawnRadius 1.5
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "Mustang"
+ }
+}
